@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tag -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  
+  <title>heart - ybc&amp;cf&#39;s wedding</title>
+
+  <!--Favicon-->
+  <link rel="icon" href="favicon/favicon.ico">
+
+  <!--Description-->
+  
+      <meta name="description" content="var c = document.getElementsByTagName(&#39;canvas&#39;)[0];
+    var a = c.getContext(&#39;2d&#39;);   
+
+
+
+    e = []; h = []; O = c.width = innerWidth; Q = c.height =">
+  
+
+  <!--Author-->
+  
+      <meta name="author" content="skybcyang">
+  
+
+  <!-- Pure CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/styles.css">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Analytics -->
+  
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+  <body>
+  	<div class="container-fluid navbar-container m-sm-5">
+      <!-- Header -->
+      <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
+  <a class="navbar-brand ml-2" href="/">ybc&cf's wedding</a>
+  <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto my-auto">
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/heart">Heart</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      
+    </ul>
+    <hr class="hidden-md-up" />
+  </div>
+</nav>
+
+
+  		<div class="row">
+  			
+<div class="col-12 pt-lg-3 mb-4 px-4 portfolio-content">
+  <p><canvas id="c"></canvas></p>
+<script>  
+    var c = document.getElementsByTagName('canvas')[0];
+    var a = c.getContext('2d');   
+</script>
+
+<script>
+    e = []; h = []; O = c.width = innerWidth; Q = c.height = innerHeight; v = 32; M = Math; R = M.random; C = M.cos; Y = 6.3; for (i = 0; i < Y; i += 0.2)h.push([O / 2 + 180 * M.pow(M.sin(i), 3), Q / 2 + 10 * -(15 * C(i) - 5 * C(2 * i) - 2 * C(3 * i) - C(4 * i))]);
+    for (i = 0; i < v;) { x = R() * O; y = R() * Q; H = 80 * (i / v) + 280; S = 40 * R() + 60; B = 60 * R() + 20; f = []; for (k = 0; k < v;)f[k++] = { x: x, y: y, X: 0, Y: 0, R: 1 - k / v + 1, S: R() + 1, q: ~~(R() * v), D: 2 * (i % 2) - 1, F: 0.2 * R() + 0.7, f: "hsla(" + ~~H + "," + ~~S + "%," + ~~B + "%,.1)" }; e[i++] = f }
+    function _(d) { a.fillStyle = d.f; a.beginPath(); a.arc(d.x, d.y, d.R, 0, Y, 1); a.closePath(); a.fill() }
+    setInterval(function () { a.fillStyle = "rgba(0,0,0,.2)"; a.fillRect(0, 0, O, Q); for (i = v; i--;) { f = e[i]; u = f[0]; q = h[u.q]; D = u.x - q[0]; E = u.y - q[1]; G = M.sqrt(D * D + E * E); 10 > G && (0.95 < R() ? u.q = ~~(R() * v) : (0.99 < R() && (u.D *= -1), u.q += u.D, u.q %= v, 0 > u.q && (u.q += v))); u.X += -D / G * u.S; u.Y += -E / G * u.S; u.x += u.X; u.y += u.Y; _(u); u.X *= u.F; u.Y *= u.F; for (k = 0; k < v - 1;)T = f[k], N = f[++k], N.x -= 0.7 * (N.x - T.x), N.y -= 0.7 * (N.y - T.y), _(N) } }, 25);
+</script>
+
+</div>
+
+
+      </div>
+      
+  	</div>
+
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>
